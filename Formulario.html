@@ -10,6 +10,9 @@
     <section>
         <h2>Contacto</h2>
         <p>Rellena el formulario para contactarnos.</p>
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+            <p>Por favor, completa el siguiente formulario:</p>
         
         <!-- El action="#" es un marcador de posición. Aquí iría la URL del servidor que procesa los datos. -->
         <form action="#">
@@ -18,7 +21,7 @@
                 <!-- required: campo obligatorio -->
                 <!-- minlength/maxlength: longitud mínima y máxima -->
                 <input type="text" id="name" name="name" required minlength="3" maxlength="50">
-            </div>
+            </div> 
             <br>
             <div>
                 <label for="email">Correo Electrónico:</label><br>
@@ -26,6 +29,10 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <br>
+            <div>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" required min="18" max="100" step="1">
+            </div>
             <div>
                 <label for="phone">Teléfono:</label><br>
                 <!-- pattern: valida que el contenido coincida con la expresión regular (solo números) -->
@@ -39,8 +46,9 @@
                     <option value="Bucaramanga">Bucaramanga</option>
                     <option value="Giron">Giron</option>
                     <option value="Piedecuesta">Piedecuesta</option>
-                    <option value="Floridablanca">Floridablanca</option>
+                    <option value="Floridablanca">Floridablanca</option></select>
             <div>
+    </fieldset>
                 <label for="message">Mensaje:</label><br>
                 <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
             </div>
