@@ -1,26 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-
-    <nav>
-        <ul>
-            <li><a href="Index.html">Inicio</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-        </ul>
-    </nav>
-    
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        header { background-color: #f4f4f4; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 20px; }
+        .container { display: flex; margin: 20px; }
+        main { flex: 3; margin-right: 20px; }
+        aside { flex: 1; background-color: #f9f9f9; padding: 1rem; }
+        article { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 20px; }
+        article img { max-width: 100%; height: auto; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; position: relative; bottom: 0; width: 100%;}
+    </style>
 </head>
 <body>
-</body>
     <header>
-        <h1>Blog</h1>
+        <h1>Mi Blog de Viajes</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>Welcome to the blog section.</p>
-    </main>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>Artículos Recientes</h2>
+                <article>
+                    <h3>Un viaje a las montañas</h3>
+                    <p>Publicado el 10 de agosto de 2025</p>
+                    <img src="https://via.placeholder.com/600x300.png?text=Paisaje+de+Montañas" alt="Paisaje de montañas">
+                    <p>Las montañas ofrecen una escapada tranquila de la vida en la ciudad. El aire fresco, los paisajes impresionantes y la oportunidad de conectar con la naturaleza son inigualables.</p>
+                    <a href="#">Leer más...</a>
+                </article>
+                
+                <article>
+                    <h3>Explorando la costa</h3>
+                    <p>Publicado el 5 de agosto de 2025</p>
+                    <img src="https://via.placeholder.com/600x300.png?text=Playa+en+la+Costa" alt="Playa en la costa">
+                    <p>La costa tiene un encanto especial. El sonido de las olas, la arena bajo tus pies y los hermosos atardeceres crean recuerdos que duran para siempre.</p>
+                    <a href="#">Leer más...</a>
+                </article>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Montañas</a></li>
+                <li><a href="#">Playas</a></li>
+                <li><a href="#">Ciudades</a></li>
+            </ul>
+            <h3>Sobre Mí</h3>
+            <p>Un entusiasta de los viajes compartiendo mis aventuras por el mundo.</p>
+        </aside>
+    </div>
+
     <footer>
         <p>&copy; 2025 My Blog</p>
     </footer>
