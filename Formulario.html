@@ -6,7 +6,7 @@
     <title>Página de Contacto Simple</title>
 </head>
 <body>
-
+//Formulario de contacto
     <section>
         <h2>Contacto</h2>
         <p>Rellena el formulario para contactarnos.</p>
@@ -14,9 +14,10 @@
             <legend>Formulario de Contacto</legend>
             <p>Por favor, completa el siguiente formulario:</p>
         
-        <!-- El action="#" es un marcador de posición. Aquí iría la URL del servidor que procesa los datos. -->
+        //etiqueta formulario
         <form action="#">
             <div>
+                
                 <label for="name">Nombre:</label><br>
                 <!-- required: campo obligatorio -->
                 <!-- minlength/maxlength: longitud mínima y máxima -->
@@ -24,22 +25,26 @@
             </div> 
             <br>
             <div>
+                //correo electronico
                 <label for="email">Correo Electrónico:</label><br>
                 <!-- type="email": el navegador valida que sea un formato de email -->
                 <input type="email" id="email" name="email" required>
             </div>
             <br>
             <div>
+                //edad
                 <label for="edad">Edad:</label><br>
                 <input type="number" id="edad" name="edad" required min="18" max="100" step="1">
             </div>
             <div>
+                //telefono
                 <label for="phone">Teléfono:</label><br>
                 <!-- pattern: valida que el contenido coincida con la expresión regular (solo números) -->
                 <input type="tel" id="phone" name="phone" required pattern="[0-9]{7,15}" title="Introduce un número de teléfono válido (solo números, entre 7 y 15 dígitos).">
             </div>
             <br>
             <div>
+                //lista desplegable ciudad
                 <label for = Ciudad>Ciudad:</label><br>
                 <select id="Ciudad" name="Ciudad" required>
                     <option value="" disabled selected>Selecciona una ciudad</option>
@@ -49,10 +54,12 @@
                     <option value="Floridablanca">Floridablanca</option></select>
             <div>
     </fieldset>
+    //area de texto para mensaje
                 <label for="message">Mensaje:</label><br>
                 <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
             </div>
             <br>
+            //boton para enviar mensaje
             <button type="submit">Enviar Mensaje</button>
         </form>
     </section>
